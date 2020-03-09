@@ -29,21 +29,21 @@ class MyLogger
     public function log($message, $loglevel = "")
     {
         switch ($loglevel) {
-            case 'WARNING':
-                $this->warning($message);
-                break;
-            case 'ERROR':
-                $this->error($message);
-                break;
-            case 'DEBUG':
-                $this->debug($message);
-                break;
-            case 'INFO':
-                $this->info($message);
-                break;
-            default:
-                echo $message;
-                break;
+        case 'WARNING':
+            $this->warning($message);
+            break;
+        case 'ERROR':
+            $this->error($message);
+            break;
+        case 'DEBUG':
+            $this->debug($message);
+            break;
+        case 'INFO':
+            $this->info($message);
+            break;
+        default:
+            echo $message;
+            break;
         }
     }
 }
